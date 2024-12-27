@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.140.0">
+
+  <title>Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 3) &middot; Blog Lập Trình</title>
+
+  <meta name="description" content="" />
+
+  
+  <meta itemprop="name" content="Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 3)">
+  <meta itemprop="description" content="1. Chuyển Đổi Kiểu Dữ Liệu trong JavaScriptChuyển đổi kiểu là quá trình biến đổi một giá trị từ kiểu dữ liệu này sang kiểu dữ liệu khác. JavaScript tự động thực hiện chuyển đổi kiểu trong một số tình huống, nhưng bạn cũng có thể chủ động thực hiện chuyển đổi khi cần thiết.Chuyển Đổi Kiểu Tự Động (Implicit Type Conversion) JavaScript có thể tự động chuyển đổi kiểu dữ liệu trong các phép toán. Đây là một cơ chế gọi là &#34;chuyển đổi kiểu ngầm định&#34;.Ví dụ:">
+  <meta itemprop="datePublished" content="2024-12-15T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="542">
+  <meta itemprop="image" content="http://localhost:1313/images/avatar.pngpng">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/avatar.pngpng">
+  <meta name="twitter:title" content="Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 3)">
+  <meta name="twitter:description" content="1. Chuyển Đổi Kiểu Dữ Liệu trong JavaScriptChuyển đổi kiểu là quá trình biến đổi một giá trị từ kiểu dữ liệu này sang kiểu dữ liệu khác. JavaScript tự động thực hiện chuyển đổi kiểu trong một số tình huống, nhưng bạn cũng có thể chủ động thực hiện chuyển đổi khi cần thiết.Chuyển Đổi Kiểu Tự Động (Implicit Type Conversion) JavaScript có thể tự động chuyển đổi kiểu dữ liệu trong các phép toán. Đây là một cơ chế gọi là &#34;chuyển đổi kiểu ngầm định&#34;.Ví dụ:">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/posts6/">
+  <meta property="og:site_name" content="Blog Lập Trình">
+  <meta property="og:title" content="Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 3)">
+  <meta property="og:description" content="1. Chuyển Đổi Kiểu Dữ Liệu trong JavaScriptChuyển đổi kiểu là quá trình biến đổi một giá trị từ kiểu dữ liệu này sang kiểu dữ liệu khác. JavaScript tự động thực hiện chuyển đổi kiểu trong một số tình huống, nhưng bạn cũng có thể chủ động thực hiện chuyển đổi khi cần thiết.Chuyển Đổi Kiểu Tự Động (Implicit Type Conversion) JavaScript có thể tự động chuyển đổi kiểu dữ liệu trong các phép toán. Đây là một cơ chế gọi là &#34;chuyển đổi kiểu ngầm định&#34;.Ví dụ:">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-15T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.pngpng">
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "http://localhost:1313/#author",
+      "name":  null ,
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "http://localhost:1313/images/avatar.png"
+        
+      },
+      "description": "Tác giả: Đinh Tấn Phương Linh"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "http://localhost:1313/#website",
+      "url": "http://localhost:1313/",
+      "name": "Blog Lập Trình",
+      "description": "Tác giả: Đinh Tấn Phương Linh",
+      "publisher": {
+        "@id": "http://localhost:1313/#author"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/images/avatar.pngpng",
+      "caption": "Blog Lập Trình"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "http://localhost:1313/posts/posts6/#webpage",
+      "url": "http://localhost:1313/posts/posts6/",
+      "name": "Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 3)",
+      "isPartOf": {
+        "@id": "http://localhost:1313/#website"
+      },
+      "about": {
+         "@id": "http://localhost:1313/#author"
+      },
+      "datePublished": "2024-12-15T00:00:00+00:00",
+      "dateModified": "2024-12-15T00:00:00+00:00",
+      "description": "\u003cp style=\"font-size: 2em; font-weight: bold; color: black;\"\u003e1. Chuyển Đổi Kiểu Dữ Liệu trong JavaScript\r\n\u003cp style=\"text-indent: 50px;\"\u003eChuyển đổi kiểu là quá trình biến đổi một giá trị từ kiểu dữ liệu này sang kiểu dữ liệu khác. JavaScript tự động thực hiện chuyển đổi kiểu trong một số tình huống, nhưng bạn cũng có thể chủ động thực hiện chuyển đổi khi cần thiết.\r\n\u003cp style=\"text-indent: 50px;\"\u003eChuyển Đổi Kiểu Tự Động (Implicit Type Conversion) JavaScript có thể tự động chuyển đổi kiểu dữ liệu trong các phép toán. Đây là một cơ chế gọi là \"chuyển đổi kiểu ngầm định\".\r\n\u003cp\u003eVí dụ:\u003c/p\u003e",
+      "inLanguage": "en",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "http://localhost:1313/posts/posts6/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "http://localhost:1313/posts/posts6/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "http://localhost:1313/posts/posts6/#webpage"
+      },
+      "headline": "Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 3)",
+      "datePublished": "2024-12-15T00:00:00+00:00",
+      "dateModified": "2024-12-15T00:00:00+00:00",
+      "publisher": {
+        "@id": "http://localhost:1313/#author"
+      },
+      "keywords": [
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "http://localhost:1313/posts/posts6/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="http://localhost:1313/">
+            <img src="/images/avatar.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1>Blog Lập Trình</h1>
+
+      
+      <p class="lead">Tác giả: Đinh Tấn Phương Linh</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="http://localhost:1313/">Trang chủ</a>
+        </li>
+        <li>
+          <a href="/posts/">Bài viết</a>
+        </li><li>
+          <a href="/about/">Về tôi</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://www.facebook.com/inhtanphuonglinh/" rel="me" title="Facebook" target="_blank">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/dinhtanplinh03" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 3)</h1>
+  
+
+  <div class="post-date">
+    
+    
+    
+    
+    
+    
+    <time datetime="2024-12-15T00:00:00Z">
+     15 tháng 12 năm 2024
+    </time> <span class="readtime">- Tổng 3 phút đã đọc</span>
+  </div>
+
+  <div>
+  <p style="font-size: 2em; font-weight: bold; color: black;">1. Chuyển Đổi Kiểu Dữ Liệu trong JavaScript
+<p style="text-indent: 50px;">Chuyển đổi kiểu là quá trình biến đổi một giá trị từ kiểu dữ liệu này sang kiểu dữ liệu khác. JavaScript tự động thực hiện chuyển đổi kiểu trong một số tình huống, nhưng bạn cũng có thể chủ động thực hiện chuyển đổi khi cần thiết.
+<p style="text-indent: 50px;">Chuyển Đổi Kiểu Tự Động (Implicit Type Conversion) JavaScript có thể tự động chuyển đổi kiểu dữ liệu trong các phép toán. Đây là một cơ chế gọi là "chuyển đổi kiểu ngầm định".
+<p>Ví dụ:</p>
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">a = <span style="color: red;">5;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">b = <span style="color: red;">10;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">sum = <span style="color: red;">a + b;</span></span> <span style="color: green;">//5+10</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">sum</span>); <span style="color: green;">//15</span></p>
+</div>
+Trong ví dụ trên, mặc dù a là một chuỗi và b là một số, JavaScript tự động chuyển đổi b thành chuỗi và nối chúng lại với nhau.
+<p style="text-indent: 50px;">Chuyển Đổi Kiểu Thủ Công (Explicit Type Conversion). Bạn có thể chủ động chuyển đổi kiểu dữ liệu bằng các hàm chuyển đổi kiểu như String(), Number(), và Boolean().
+<p><strong>Chuyển đổi sang chuỗi:</strong></p>
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">num = <span style="color: red;">123;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">str = <span style="color: red;">String(num);</span></span>  <span style="color: green;">// Chuyển số thành chuỗi</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">str</span>); <span style="color: green;">// "123"</span></p>
+</div>
+<p><strong>Chuyển đổi sang số:</strong></p>
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">str = <span style="color: red;">"456";</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">num = <span style="color: red;">Number(str);</span></span> <span style="color: green;"> // Chuyển chuỗi thành số</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">num</span>); <span style="color: green;">//456</span></p>
+</div>
+<p><strong>Chuyển đổi sang Boolean:</strong></p>
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">value = <span style="color: red;">0;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">bool = Boolean(<span style="color: yellow;">value</span>);</span>  <span style="color: gray;">// 0 will be converted to false</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">bool</span>); <span style="color: gray;">// false</span></p>
+</div>
+<p>Các Tình Huống Chuyển Đổi Kiểu Thường Gặp</p>
+<p><strong>Sử dụng trong phép toán cộng:</strong></p>
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">a = <span style="color: red;">"5";</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">b = <span style="color: red;">2;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">result = a - b;</span> <span style="color: green;">// JavaScript will convert "5" to a number before performing subtraction</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">result</span>); <span style="color: green;">// 3</span></p>
+</div>
+<p><strong>So sánh giá trị:</strong></p>
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">"5" == 5</span>);   // <span style="color: red;">true</span> <span style="color: green;">(vì JavaScript chuyển đổi kiểu dữ liệu để so sánh)</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">"5" === 5</span>);  // <span style="color: red;">false</span> <span style="color: green;">(so sánh cả giá trị và kiểu dữ liệu)</span></p>
+</div>
+<p style="font-size: 2em; font-weight: bold; color: black;">2. Chú Thích trong JavaScript
+<p style="text-indent: 50px;">Chú thích (comments) là những phần trong mã nguồn không được chương trình thực thi. Chúng chỉ để giúp người lập trình khác hiểu mã nguồn. Trong JavaScript, có hai loại chú thích chính:
+<p><strong>Chú Thích Một Dòng</strong></p>
+<p style="text-indent: 50px;">Chú thích một dòng được sử dụng để giải thích một đoạn mã cụ thể. Nó bắt đầu bằng //.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;"><span style="color: green;">// Đây là một chú thích một dòng</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">x = <span style="color: red;">10;</span></span> <span style="color: green;">// Biến x được khởi tạo với giá trị 10</span></p>
+</div>
+<p><strong>Chú Thích Đa Dòng</strong></p>
+<p style="text-indent: 50px;">Chú thích đa dòng bắt đầu bằng /* và kết thúc bằng */. Chúng có thể được sử dụng để chú thích nhiều dòng mã.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">
+        <span style="color: green;">/*</span><br>
+        <span style="color: green;">    Đây là một chú thích đa dòng.</span><br>
+        <span style="color: green;">    Bạn có thể viết nhiều dòng chú thích ở đây.</span><br>
+        <span style="color: green;">    Mã này không được thực thi.</span><br>
+        <span style="color: green;">*/</span>
+    </p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">
+        let <span style="color: yellow;">y</span> = <span style="color: red;">20</span>;
+    </p>
+</div>
+<p style="font-size: 2em; font-weight: bold; color: black;">3. Lợi Ích của Chuyển Đổi Kiểu và Chú Thích
+<p style="text-indent: 50px;">Chuyển đổi kiểu giúp mã của bạn linh hoạt: Việc hiểu và sử dụng chuyển đổi kiểu sẽ giúp bạn làm việc với nhiều loại dữ liệu khác nhau một cách dễ dàng.
+<p style="text-indent: 50px;">Chú thích giúp mã nguồn dễ đọc hơn: Chú thích là cách tuyệt vời để giải thích lý do tại sao bạn làm điều gì đó trong mã nguồn. Điều này rất quan trọng khi làm việc trong một nhóm phát triển phần mềm.
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts5/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
+  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts7/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
+</div>
+  </div>
+
+  
+
+
+  
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Đinh Tấn Phương Linh 2024
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  
+
+    
+</body>
+</html>

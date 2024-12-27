@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.140.0">
+
+  <title>Điều kiện và vòng lăp trong JavaScript &middot; Blog Lập Trình</title>
+
+  <meta name="description" content="" />
+
+  
+  <meta itemprop="name" content="Điều kiện và vòng lăp trong JavaScript">
+  <meta itemprop="description" content="1. Điều Kiện trong JavaScriptĐiều kiện trong JavaScript giúp chúng ta kiểm tra các biểu thức và thực hiện các hành động khác nhau dựa trên kết quả của việc kiểm tra. JavaScript cung cấp các cấu trúc điều kiện như if, else, else if, và switch để xử lý các tình huống khác nhau.a. Câu Lệnh if">
+  <meta itemprop="datePublished" content="2024-12-17T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-17T00:00:00+00:00">
+  <meta itemprop="wordCount" content="708">
+  <meta itemprop="image" content="http://localhost:1313/images/avatar.pngpng">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/avatar.pngpng">
+  <meta name="twitter:title" content="Điều kiện và vòng lăp trong JavaScript">
+  <meta name="twitter:description" content="1. Điều Kiện trong JavaScriptĐiều kiện trong JavaScript giúp chúng ta kiểm tra các biểu thức và thực hiện các hành động khác nhau dựa trên kết quả của việc kiểm tra. JavaScript cung cấp các cấu trúc điều kiện như if, else, else if, và switch để xử lý các tình huống khác nhau.a. Câu Lệnh if">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/posts8/">
+  <meta property="og:site_name" content="Blog Lập Trình">
+  <meta property="og:title" content="Điều kiện và vòng lăp trong JavaScript">
+  <meta property="og:description" content="1. Điều Kiện trong JavaScriptĐiều kiện trong JavaScript giúp chúng ta kiểm tra các biểu thức và thực hiện các hành động khác nhau dựa trên kết quả của việc kiểm tra. JavaScript cung cấp các cấu trúc điều kiện như if, else, else if, và switch để xử lý các tình huống khác nhau.a. Câu Lệnh if">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-17T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.pngpng">
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "http://localhost:1313/#author",
+      "name":  null ,
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "http://localhost:1313/images/avatar.png"
+        
+      },
+      "description": "Tác giả: Đinh Tấn Phương Linh"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "http://localhost:1313/#website",
+      "url": "http://localhost:1313/",
+      "name": "Blog Lập Trình",
+      "description": "Tác giả: Đinh Tấn Phương Linh",
+      "publisher": {
+        "@id": "http://localhost:1313/#author"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/images/avatar.pngpng",
+      "caption": "Blog Lập Trình"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "http://localhost:1313/posts/posts8/#webpage",
+      "url": "http://localhost:1313/posts/posts8/",
+      "name": "Điều kiện và vòng lăp trong JavaScript",
+      "isPartOf": {
+        "@id": "http://localhost:1313/#website"
+      },
+      "about": {
+         "@id": "http://localhost:1313/#author"
+      },
+      "datePublished": "2024-12-17T00:00:00+00:00",
+      "dateModified": "2024-12-17T00:00:00+00:00",
+      "description": "\u003cp style=\"font-size: 2em; font-weight: bold; color: black;\"\u003e1. Điều Kiện trong JavaScript\r\n\u003cp style=\"text-indent: 50px;\"\u003eĐiều kiện trong JavaScript giúp chúng ta kiểm tra các biểu thức và thực hiện các hành động khác nhau dựa trên kết quả của việc kiểm tra. JavaScript cung cấp các cấu trúc điều kiện như if, else, else if, và switch để xử lý các tình huống khác nhau.\r\n\u003cp\u003e\u003cstrong\u003ea. Câu Lệnh if\u003c/strong\u003e\u003c/p\u003e",
+      "inLanguage": "en",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "http://localhost:1313/posts/posts8/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "http://localhost:1313/posts/posts8/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "http://localhost:1313/posts/posts8/#webpage"
+      },
+      "headline": "Điều kiện và vòng lăp trong JavaScript",
+      "datePublished": "2024-12-17T00:00:00+00:00",
+      "dateModified": "2024-12-17T00:00:00+00:00",
+      "publisher": {
+        "@id": "http://localhost:1313/#author"
+      },
+      "keywords": [
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "http://localhost:1313/posts/posts8/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="http://localhost:1313/">
+            <img src="/images/avatar.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1>Blog Lập Trình</h1>
+
+      
+      <p class="lead">Tác giả: Đinh Tấn Phương Linh</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="http://localhost:1313/">Trang chủ</a>
+        </li>
+        <li>
+          <a href="/posts/">Bài viết</a>
+        </li><li>
+          <a href="/about/">Về tôi</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://www.facebook.com/inhtanphuonglinh/" rel="me" title="Facebook" target="_blank">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/dinhtanplinh03" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Điều kiện và vòng lăp trong JavaScript</h1>
+  
+
+  <div class="post-date">
+    
+    
+    
+    
+    
+    
+    <time datetime="2024-12-17T00:00:00Z">
+     17 tháng 12 năm 2024
+    </time> <span class="readtime">- Tổng 4 phút đã đọc</span>
+  </div>
+
+  <div>
+  <p style="font-size: 2em; font-weight: bold; color: black;">1. Điều Kiện trong JavaScript
+<p style="text-indent: 50px;">Điều kiện trong JavaScript giúp chúng ta kiểm tra các biểu thức và thực hiện các hành động khác nhau dựa trên kết quả của việc kiểm tra. JavaScript cung cấp các cấu trúc điều kiện như if, else, else if, và switch để xử lý các tình huống khác nhau.
+<p><strong>a. Câu Lệnh if</strong></p>
+<p style="text-indent: 50px;">Câu lệnh if cho phép bạn kiểm tra một điều kiện và thực hiện một hành động nếu điều kiện đó đúng (true).
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">age = 18</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;"><span style="color: red;">if</span>  (<span style="color: yellow;">age >= 18</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: yellow;">console.log</span>(<span style="color: white;">"Bạn đã đủ tuổi để lái xe."</span>); </p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+</div>
+<p><strong>b. Câu Lệnh else</strong></p>
+<p style="text-indent: 50px;">Câu lệnh else được sử dụng sau câu lệnh if để thực hiện một hành động nếu điều kiện trong if không đúng (false).
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">age = 16;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;"><span style="color: red;">if</span> (<span style="color: yellow;">age >= 18</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">"Bạn đã đủ tuổi để lái xe.</span>");</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}<span style="color: red;"> else </span>{</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">"Bạn chưa đủ tuổi để lái xe."</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+</div>
+<p><strong>c. Câu Lệnh else if</strong></p>
+<p style="text-indent: 50px;">Khi bạn cần kiểm tra nhiều điều kiện, bạn có thể sử dụng else if để kiểm tra các điều kiện bổ sung.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">age =20;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;"><span style="color: red;">if</span> (<span style="color: yellow;">age < 18</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">"Bạn là thiếu niên."</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">} <span style="color: red;">else if</span> (<span style="color: yellow;">age >= 18 && age <= 60</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">"Bạn là người trưởng thành."</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">} <span style="color: red;">else</span> {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">"Bạn là người cao tuổi."</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+</div>
+<p><strong>d. Câu Lệnh switch</strong></p>
+<p style="text-indent: 50px;">Câu lệnh switch là một cách khác để kiểm tra nhiều điều kiện, nhưng với cú pháp ngắn gọn hơn so với chuỗi các câu lệnh if-else.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">day = <span style="color: red;">2;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">dayName;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;"><span style="color: red;">switch</span> (<span style="color: yellow;">day</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: red;">case</span> <span style="color: yellow;">1:</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">    dayName = <span style="color: white;">"Thứ Hai";</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">    <span style="color: red;">break;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: red;">case</span> <span style="color: yellow;">2:</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">    dayName = <span style="color: white;">"Thứ Ba";</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">    <span style="color: red;">break;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: red;">case</span> <span style="color: yellow;">3:</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">    dayName = <span style="color: white;">"Thứ Tư";</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">    <span style="color: red;">break;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: red;">default</span>:</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">    dayName = <span style="color: white;">"Ngày không hợp lệ";</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">dayName</span>); // <span style="color: white;">In ra "Thứ Ba"</span></p>
+</div>
+<p style="font-size: 2em; font-weight: bold; color: black;">2. Vòng Lặp trong JavaScript
+<p style="text-indent: 50px;">Vòng lặp là một cấu trúc điều khiển giúp bạn thực hiện một đoạn mã nhiều lần. JavaScript hỗ trợ nhiều loại vòng lặp khác nhau, bao gồm for, while, do...while, và vòng lặp for...in và for...of.
+<p><strong>a. Vòng Lặp for</strong></p>
+<p style="text-indent: 50px;">Vòng lặp for được sử dụng khi bạn biết trước số lần lặp. Cú pháp cơ bản của vòng lặp for gồm ba phần: khởi tạo, điều kiện và bước nhảy.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">for (<span style="color: yellow;">let i = 0; i < 5; i++</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">i</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+</div>
+Trong ví dụ trên, vòng lặp sẽ in ra các số từ 0 đến 4.
+<p><strong>b. Vòng Lặp while</strong></p>
+<p style="text-indent: 50px;">Vòng lặp while sẽ tiếp tục thực hiện một khối mã cho đến khi điều kiện kiểm tra trở thành false. Điều này có nghĩa là nếu điều kiện không được thỏa mãn ngay từ đầu, vòng lặp có thể không thực thi một lần nào.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">i = <span style="color: red;">0;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;"><span style="color: red;">while</span> (<span style="color: yellow;">i < 5</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">i</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: yellow;">i++;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+</div>
+Vòng lặp trên sẽ cho kết quả giống như vòng lặp for, nhưng cú pháp khác.
+<p><strong>c. Vòng Lặp do&hellip;while</strong></p>
+<p style="text-indent: 50px;">Vòng lặp do...while tương tự như vòng lặp while, nhưng nó đảm bảo rằng khối mã sẽ được thực thi ít nhất một lần, vì điều kiện được kiểm tra sau khi khối mã thực thi.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">i = <span style="color: red;">0;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;"><span style="color: red;">do</span> {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">i</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: yellow;">i++;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">} <span style="color: red;">while</span> (<span style="color: yellow;">i &lt; 5</span>);</p>
+</div>
+<p><strong>d. Vòng Lặp for&hellip;in</strong></p>
+<p style="text-indent: 50px;">Vòng lặp for...in được sử dụng để lặp qua các thuộc tính của một đối tượng.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">person = <span style="color: red;">{ name: "John", age: 30, city: "New York" };</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;"><span style="color: red;">for</span> (<span style="color: yellow;">let key</span> <span style="color: red;">in</span> <span style="color: yellow;">person</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">key + ": " + person[key]</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+</div>
+<p>Kết quả sẽ là:</p>
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">name: <span style="color: yellow;">John</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">age: <span style="color: yellow;">30</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">city: <span style="color: yellow;">New York</span></p>
+</div>
+<p><strong>e. Vòng Lặp for&hellip;of</strong></p>
+<p style="text-indent: 50px;">Vòng lặp for...of được sử dụng để lặp qua các phần tử của một mảng hoặc các đối tượng có thể lặp khác như chuỗi (string).
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">numbers = <span style="color: red;">[1, 2, 3, 4, 5];</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;"><span style="color: red;">for</span> (<span style="color: yellow;">let number of numbers</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">number</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+</div>
+Kết quả sẽ là:
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">1</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">2</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">3</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">4</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">5</p>
+</div>
+<p style="font-size: 2em; font-weight: bold; color: black;">3. Kết luận
+<p style="text-indent: 50px;">Điều kiện và vòng lặp là những công cụ quan trọng trong JavaScript giúp bạn kiểm tra các giá trị và lặp lại các thao tác một cách linh hoạt. Việc hiểu và sử dụng thành thạo các cấu trúc này giúp bạn viết mã hiệu quả và dễ dàng quản lý luồng chương trình.
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts7/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
+  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts9/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
+</div>
+  </div>
+
+  
+
+
+  
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Đinh Tấn Phương Linh 2024
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  
+
+    
+</body>
+</html>

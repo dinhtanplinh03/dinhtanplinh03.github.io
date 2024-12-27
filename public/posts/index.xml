@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Giới thiệu về tôi on Blog Lập Trình</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Giới thiệu về tôi on Blog Lập Trình</description>
+    <title>Posts on Blog Lập Trình</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Blog Lập Trình</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 18 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript là gì? Tại sao lại phải học JavaScript?</title>
       <link>http://localhost:1313/posts/posts1/</link>
@@ -70,13 +70,6 @@
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/posts9/</guid>
       <description>&lt;p style=&#34;text-indent: 50px;&#34;&gt;Hàm (function) trong JavaScript là một khối mã có thể được gọi và thực thi khi cần thiết. Hàm giúp tổ chức mã nguồn tốt hơn, giảm thiểu sự trùng lặp và dễ dàng tái sử dụng. JavaScript cung cấp nhiều cách để khai báo và sử dụng hàm.&#xD;&#xA;&lt;p style=&#34;font-size: 2em; font-weight: bold; color: black;&#34;&gt;1. Khai Báo Hàm trong JavaScript&#xD;&#xA;&lt;p style=&#34;text-indent: 50px;&#34;&gt;Có hai cách phổ biến để khai báo hàm trong JavaScript: khai báo hàm thông thường và khai báo hàm dưới dạng biểu thức hàm.&#xD;&#xA;&lt;p&gt;&lt;strong&gt;a. Hàm Cơ Bản (Function Declaration)&lt;/strong&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Giới thiệu về tôi</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p style=&#34;text-indent: 50px;&#34;&gt;Chào bạn, tôi là Đinh Tấn Phương Linhh, một sinh viên năm cuối ngành Công nghệ Thông tin tại trường Đại học Công nghệ TP.HCM (Hutech). Tôi đam mê lập trình và đặc biệt quan tâm đến lĩnh vực phát triển phần mềm. Trong suốt quá trình học tập, tôi đã tham gia nhiều dự án và học hỏi các công nghệ mới để nâng cao kỹ năng lập trình của mình.&#xD;&#xA;&lt;p style=&#34;text-indent: 50px;&#34;&gt;Mục tiêu nghề nghiệp của tôi là trở thành một lập trình viên phần mềm chuyên nghiệp, phát triển các ứng dụng hiệu quả và phục vụ nhu cầu của người dùng. Tôi mong muốn có thể đóng góp vào việc tạo ra các giải pháp phần mềm sáng tạo và hữu ích cho cộng đồng.&#xD;&#xA;&lt;p style=&#34;text-indent: 50px;&#34;&gt;Hiện tại, tôi đang tập trung vào việc hoàn thiện các dự án học tập và tìm kiếm cơ hội thực tập để áp dụng những kiến thức đã học vào thực tế. Tôi cũng đang học hỏi thêm về các công nghệ web, phát triển ứng dụng di động và các xu hướng mới trong ngành công nghệ thông tin.&#xD;&#xA;&lt;p style=&#34;text-indent: 50px;&#34;&gt;Blog này là nơi tôi chia sẻ những bài viết, tài nguyên và kinh nghiệm trong hành trình học lập trình của mình. Hy vọng rằng bạn sẽ tìm thấy thông tin hữu ích tại đây, đồng thời cùng tôi học hỏi và phát triển trong ngành CNTT.&#xD;&#xA;&lt;p style=&#34;text-indent: 50px;&#34;&gt;Chúc bạn học hỏi và thành công trên con đường lập trình!</description>
     </item>
   </channel>
 </rss>

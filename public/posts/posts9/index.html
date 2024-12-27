@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.140.0">
+
+  <title>Hàm trong JavaScript &middot; Blog Lập Trình</title>
+
+  <meta name="description" content="" />
+
+  
+  <meta itemprop="name" content="Hàm trong JavaScript">
+  <meta itemprop="description" content="Hàm (function) trong JavaScript là một khối mã có thể được gọi và thực thi khi cần thiết. Hàm giúp tổ chức mã nguồn tốt hơn, giảm thiểu sự trùng lặp và dễ dàng tái sử dụng. JavaScript cung cấp nhiều cách để khai báo và sử dụng hàm.1. Khai Báo Hàm trong JavaScriptCó hai cách phổ biến để khai báo hàm trong JavaScript: khai báo hàm thông thường và khai báo hàm dưới dạng biểu thức hàm.a. Hàm Cơ Bản (Function Declaration)">
+  <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
+  <meta itemprop="wordCount" content="904">
+  <meta itemprop="image" content="http://localhost:1313/images/avatar.pngpng">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/avatar.pngpng">
+  <meta name="twitter:title" content="Hàm trong JavaScript">
+  <meta name="twitter:description" content="Hàm (function) trong JavaScript là một khối mã có thể được gọi và thực thi khi cần thiết. Hàm giúp tổ chức mã nguồn tốt hơn, giảm thiểu sự trùng lặp và dễ dàng tái sử dụng. JavaScript cung cấp nhiều cách để khai báo và sử dụng hàm.1. Khai Báo Hàm trong JavaScriptCó hai cách phổ biến để khai báo hàm trong JavaScript: khai báo hàm thông thường và khai báo hàm dưới dạng biểu thức hàm.a. Hàm Cơ Bản (Function Declaration)">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/posts9/">
+  <meta property="og:site_name" content="Blog Lập Trình">
+  <meta property="og:title" content="Hàm trong JavaScript">
+  <meta property="og:description" content="Hàm (function) trong JavaScript là một khối mã có thể được gọi và thực thi khi cần thiết. Hàm giúp tổ chức mã nguồn tốt hơn, giảm thiểu sự trùng lặp và dễ dàng tái sử dụng. JavaScript cung cấp nhiều cách để khai báo và sử dụng hàm.1. Khai Báo Hàm trong JavaScriptCó hai cách phổ biến để khai báo hàm trong JavaScript: khai báo hàm thông thường và khai báo hàm dưới dạng biểu thức hàm.a. Hàm Cơ Bản (Function Declaration)">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-18T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.pngpng">
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "http://localhost:1313/#author",
+      "name":  null ,
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "http://localhost:1313/images/avatar.png"
+        
+      },
+      "description": "Tác giả: Đinh Tấn Phương Linh"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "http://localhost:1313/#website",
+      "url": "http://localhost:1313/",
+      "name": "Blog Lập Trình",
+      "description": "Tác giả: Đinh Tấn Phương Linh",
+      "publisher": {
+        "@id": "http://localhost:1313/#author"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/images/avatar.pngpng",
+      "caption": "Blog Lập Trình"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "http://localhost:1313/posts/posts9/#webpage",
+      "url": "http://localhost:1313/posts/posts9/",
+      "name": "Hàm trong JavaScript",
+      "isPartOf": {
+        "@id": "http://localhost:1313/#website"
+      },
+      "about": {
+         "@id": "http://localhost:1313/#author"
+      },
+      "datePublished": "2024-12-18T00:00:00+00:00",
+      "dateModified": "2024-12-18T00:00:00+00:00",
+      "description": "\u003cp style=\"text-indent: 50px;\"\u003eHàm (function) trong JavaScript là một khối mã có thể được gọi và thực thi khi cần thiết. Hàm giúp tổ chức mã nguồn tốt hơn, giảm thiểu sự trùng lặp và dễ dàng tái sử dụng. JavaScript cung cấp nhiều cách để khai báo và sử dụng hàm.\r\n\u003cp style=\"font-size: 2em; font-weight: bold; color: black;\"\u003e1. Khai Báo Hàm trong JavaScript\r\n\u003cp style=\"text-indent: 50px;\"\u003eCó hai cách phổ biến để khai báo hàm trong JavaScript: khai báo hàm thông thường và khai báo hàm dưới dạng biểu thức hàm.\r\n\u003cp\u003e\u003cstrong\u003ea. Hàm Cơ Bản (Function Declaration)\u003c/strong\u003e\u003c/p\u003e",
+      "inLanguage": "en",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "http://localhost:1313/posts/posts9/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "http://localhost:1313/posts/posts9/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "http://localhost:1313/posts/posts9/#webpage"
+      },
+      "headline": "Hàm trong JavaScript",
+      "datePublished": "2024-12-18T00:00:00+00:00",
+      "dateModified": "2024-12-18T00:00:00+00:00",
+      "publisher": {
+        "@id": "http://localhost:1313/#author"
+      },
+      "keywords": [
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "http://localhost:1313/posts/posts9/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="http://localhost:1313/">
+            <img src="/images/avatar.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1>Blog Lập Trình</h1>
+
+      
+      <p class="lead">Tác giả: Đinh Tấn Phương Linh</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="http://localhost:1313/">Trang chủ</a>
+        </li>
+        <li>
+          <a href="/posts/">Bài viết</a>
+        </li><li>
+          <a href="/about/">Về tôi</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://www.facebook.com/inhtanphuonglinh/" rel="me" title="Facebook" target="_blank">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/dinhtanplinh03" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Hàm trong JavaScript</h1>
+  
+
+  <div class="post-date">
+    
+    
+    
+    
+    
+    
+    <time datetime="2024-12-18T00:00:00Z">
+     18 tháng 12 năm 2024
+    </time> <span class="readtime">- Tổng 5 phút đã đọc</span>
+  </div>
+
+  <div>
+  <p style="text-indent: 50px;">Hàm (function) trong JavaScript là một khối mã có thể được gọi và thực thi khi cần thiết. Hàm giúp tổ chức mã nguồn tốt hơn, giảm thiểu sự trùng lặp và dễ dàng tái sử dụng. JavaScript cung cấp nhiều cách để khai báo và sử dụng hàm.
+<p style="font-size: 2em; font-weight: bold; color: black;">1. Khai Báo Hàm trong JavaScript
+<p style="text-indent: 50px;">Có hai cách phổ biến để khai báo hàm trong JavaScript: khai báo hàm thông thường và khai báo hàm dưới dạng biểu thức hàm.
+<p><strong>a. Hàm Cơ Bản (Function Declaration)</strong></p>
+<p style="text-indent: 50px;">Cách đơn giản nhất để khai báo một hàm trong JavaScript là sử dụng cú pháp function. Hàm được khai báo với từ khóa function, sau đó là tên hàm, danh sách tham số trong dấu ngoặc đơn và phần thân hàm trong dấu ngoặc nhọn.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">function <span style="color: red;">greet</span>(<span style="color: yellow;">name</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">"Hello, " + name + "!"</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">greet(<span style="color: yellow;">"John"</span>); <span style="color: green;">//In ra: Hello, John!</span></p>
+</div>
+<p>Trong ví dụ trên, hàm greet nhận một tham số name và in ra một thông điệp chào mừng.</p>
+<p><strong>b. Biểu Thức Hàm (Function Expression)</strong></p>
+<p style="text-indent: 50px;">Hàm có thể được khai báo dưới dạng biểu thức hàm và có thể được gán cho một biến. Điều này cho phép bạn tạo các hàm vô danh (anonymous functions), tức là hàm không có tên.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">sum = <span style="color: red;">function</span>(<span style="color: yellow;">a, b</span>) {</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: yellow;">return a + b;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">};</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">sum(2, 3)</span>); <span style="color: green;">// In ra: 5</span></p>
+</div>
+<p>Trong ví dụ trên, hàm không có tên và được gán cho biến sum, sau đó có thể gọi hàm thông qua biến này.</p>
+<p style="font-size: 2em; font-weight: bold; color: black;">2. Hàm với Tham Số và Trả Về Giá Trị
+<p style="text-indent: 50px;">Hàm có thể nhận một hoặc nhiều tham số và trả về một giá trị. Tham số của hàm là những giá trị được truyền vào hàm khi nó được gọi, còn giá trị trả về có thể được sử dụng trong các phép toán khác.
+<p><strong>a. Tham Số</strong></p>
+<p style="text-indent: 50px;">Tham số là các biến được khai báo trong dấu ngoặc đơn của hàm và được sử dụng trong thân hàm.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">function <span style="color: red;">multiply</span>(<span style="color: yellow;">x, y</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">return</span> <span style="color: yellow;">x</span> <span style="color: yellow;">* y;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">multiply(2, 3)</span>); <span style="color: green;">//In ra: 6</span></p>
+</div>
+<p>Hàm multiply nhận hai tham số x và y, và trả về giá trị của phép nhân chúng.</p>
+<p><strong>b. Giá Trị Trả Về (Return)</strong></p>
+<p style="text-indent: 50px;">Hàm có thể trả về một giá trị sử dụng từ khóa return. Khi một giá trị được trả về, hàm sẽ kết thúc và không thực thi các mã còn lại.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">function <span style="color: red;">square</span>(<span style="color: yellow;">number</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">return</span> <span style="color: yellow;">number</span> * <span style="color: yellow;">number</span>;</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">result = <span style="color: red;">square</span>(<span style="color: yellow;">4</span>);</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">result</span>); <span style="color: green;">// In ra: 16</span></p>
+</div>
+<p style="font-size: 2em; font-weight: bold; color: black;">3. Hàm với Tham Số Mặc Định
+<p style="text-indent: 50px;">JavaScript cho phép bạn gán giá trị mặc định cho các tham số hàm. Nếu không có giá trị được truyền vào khi gọi hàm, giá trị mặc định sẽ được sử dụng.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">function <span style="color: red;">greet</span>(<span style="color: yellow;">name = <span style="color: red;">"Guest"</span></span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">"Hello, " + name + "!"</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">greet(); <span style="color: green;">// In ra: Hello, Guest!</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">greet(<span style="color: yellow;">"Alice"</span>); <span style="color: green;">// In ra: Hello, Alice!</span></p>
+</div>
+<p>Trong ví dụ trên, nếu không truyền tham số name, giá trị mặc định là &ldquo;Guest&rdquo; sẽ được sử dụng.</p>
+<p style="font-size: 2em; font-weight: bold; color: black;">4. Hàm Nhanh (Arrow Function)
+<p style="text-indent: 50px;">Trong ES6, JavaScript giới thiệu một cách khai báo hàm mới gọi là arrow function. Cú pháp của arrow function ngắn gọn hơn và không có từ khóa function, thay vào đó sử dụng dấu =>.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">add = (<span style="color: white;">a, b</span>) => <span style="color: red;">a + b;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">add(2, 3)</span>); <span style="color: green;">// In ra: 5</span></p>
+</div>
+<p>Arrow function rất hữu ích khi bạn muốn viết hàm ngắn gọn, nhưng cũng có những điểm khác biệt như không có this và không thể sử dụng làm hàm khởi tạo.</p>
+<p style="font-size: 2em; font-weight: bold; color: black;">5. Hàm Tự Gọi (IIFE - Immediately Invoked Function Expression)
+<p style="text-indent: 50px;">IIFE là một biểu thức hàm được gọi ngay sau khi được khai báo. Cú pháp của IIFE là hàm được bao trong dấu ngoặc đơn, và sau đó được gọi ngay lập tức.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">(<span style="color: red;">function</span>() {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">"This is an IIFE!"</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">})();</p>
+</div>
+<p>IIFE thường được sử dụng để tạo ra một phạm vi (scope) riêng biệt cho các biến trong hàm mà không làm ảnh hưởng đến phạm vi toàn cục.</p>
+<p style="font-size: 2em; font-weight: bold; color: black;">6. Hàm Tham Chiếu và Hàm Gọi Lại (Callback Functions)
+<p style="text-indent: 50px;">Hàm trong JavaScript có thể được truyền như một tham số cho một hàm khác. Hàm nhận tham số này gọi là callback function.
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">function <span style="color: red;">processData</span>(<span style="color: yellow;">data, callback</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">"Processing: " + data</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">callback();</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">function <span style="color: red;">showResult</span>() {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: violet;">console.log(<span style="color: white;">"Processing Complete!"</span>);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">processData(<span style="color: yellow;">"File 1"</span>, <span style="color: yellow;">showResult</span>);</p>
+</div>
+<p>Trong ví dụ trên, hàm showResult là một hàm callback được truyền vào hàm processData và được gọi sau khi quá trình xử lý dữ liệu hoàn tất.</p>
+<p style="font-size: 2em; font-weight: bold; color: black;">7. Hàm Đệ Quy (Recursive Functions)
+<p style="text-indent: 50px;">Hàm đệ quy là hàm gọi chính nó trong quá trình thực thi. Hàm đệ quy rất mạnh mẽ và hữu ích trong việc giải quyết các bài toán phức tạp như tính toán giai thừa, tìm kiếm trong cây,…
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;"><span style="color: red;">function</span> <span style="color: yellow;">factorial</span>(<span style="color: yellow;">n</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: red;">if</span> (<span style="color: yellow;">n === 0</span>) {</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">    <span style="color: yellow;">return</span> <span style="color: red;">1;</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  }</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">  <span style="color: yellow;">return</span> <span style="color: yellow;">n</span> <span style="color: red;">*</span> <span style="color: yellow;">factorial(n - 1);</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">factorial(5)</span>); // In ra: <span style="color: red;">120</span></p>
+</div>
+<p>Trong ví dụ trên, hàm factorial tính giai thừa của một số thông qua việc gọi chính nó.</p>
+<p style="font-size: 2em; font-weight: bold; color: black;">8. Kết luận
+<p style="text-indent: 50px;">Hàm là một phần quan trọng trong JavaScript, giúp bạn tổ chức và tái sử dụng mã dễ dàng. Từ việc khai báo các hàm cơ bản, đến việc sử dụng hàm dưới dạng biểu thức, arrow function, hàm đệ quy và callback function, JavaScript cung cấp nhiều công cụ mạnh mẽ để xử lý các tác vụ phức tạp.
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts8/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
+</div>
+  </div>
+
+  
+
+
+  
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Đinh Tấn Phương Linh 2024
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  
+
+    
+</body>
+</html>

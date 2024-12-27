@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.140.0">
+
+  <title>Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 1) &middot; Blog Lập Trình</title>
+
+  <meta name="description" content="" />
+
+  
+  <meta itemprop="name" content="Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 1)">
+  <meta itemprop="description" content="Để sử dụng JavaScriptJavaScript một cách hiệu quả, việc hiểu rõ các khái niệm cơ bản như biến, kiểu dữ liệu, truyền kiểu và chú thích là rất quan trọng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu các khái niệm này một cách chi tiết.Vì bài viết này tìm hiểu khá nhiều khái niệm nên tôi sẽ chia nó làm nhiều phần.1. Biến là gì?Bạn hãy tưởng tượng rằng dòng chữ Hello World mà chúng ta in ra trong bài trước chính là một món hàng. Nhưng để có thể sử dụng món hàng đó bất cứ khi nào, chúng ta cần một chiếc hộp để đựng nó. Chiếc hộp đó chính là biến trong lập trình. Một chiếc hộp (biến) trong JavaScript có thể chứa bất kỳ thứ gì bạn muốn: một con số, một đoạn chữ, hay thậm chí là một mệnh lệnh. Khi bạn đặt món hàng vào chiếc hộp, bạn có thể dán nhãn cho nó để dễ nhớ. Nhãn đó chính là tên biến.2. Cách khai báo biến trong JavaScriptĐể tạo ra chiếc hộp này, chúng ta sử dụng các từ khóa &#34;let&#34;, &#34;const&#34;, hoặc &#34;var&#34;. Hãy hình dung rằng những từ khóa này giống như các loại hộp khác nhau, mỗi loại có đặc điểm riêng.Khai báo một chiếc hộp (biến)let message = Hello, World!&#34;;">
+  <meta itemprop="datePublished" content="2024-12-13T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-13T00:00:00+00:00">
+  <meta itemprop="wordCount" content="631">
+  <meta itemprop="image" content="http://localhost:1313/images/avatar.pngpng">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/avatar.pngpng">
+  <meta name="twitter:title" content="Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 1)">
+  <meta name="twitter:description" content="Để sử dụng JavaScriptJavaScript một cách hiệu quả, việc hiểu rõ các khái niệm cơ bản như biến, kiểu dữ liệu, truyền kiểu và chú thích là rất quan trọng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu các khái niệm này một cách chi tiết.Vì bài viết này tìm hiểu khá nhiều khái niệm nên tôi sẽ chia nó làm nhiều phần.1. Biến là gì?Bạn hãy tưởng tượng rằng dòng chữ Hello World mà chúng ta in ra trong bài trước chính là một món hàng. Nhưng để có thể sử dụng món hàng đó bất cứ khi nào, chúng ta cần một chiếc hộp để đựng nó. Chiếc hộp đó chính là biến trong lập trình. Một chiếc hộp (biến) trong JavaScript có thể chứa bất kỳ thứ gì bạn muốn: một con số, một đoạn chữ, hay thậm chí là một mệnh lệnh. Khi bạn đặt món hàng vào chiếc hộp, bạn có thể dán nhãn cho nó để dễ nhớ. Nhãn đó chính là tên biến.2. Cách khai báo biến trong JavaScriptĐể tạo ra chiếc hộp này, chúng ta sử dụng các từ khóa &#34;let&#34;, &#34;const&#34;, hoặc &#34;var&#34;. Hãy hình dung rằng những từ khóa này giống như các loại hộp khác nhau, mỗi loại có đặc điểm riêng.Khai báo một chiếc hộp (biến)let message = Hello, World!&#34;;">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/posts4/">
+  <meta property="og:site_name" content="Blog Lập Trình">
+  <meta property="og:title" content="Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 1)">
+  <meta property="og:description" content="Để sử dụng JavaScriptJavaScript một cách hiệu quả, việc hiểu rõ các khái niệm cơ bản như biến, kiểu dữ liệu, truyền kiểu và chú thích là rất quan trọng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu các khái niệm này một cách chi tiết.Vì bài viết này tìm hiểu khá nhiều khái niệm nên tôi sẽ chia nó làm nhiều phần.1. Biến là gì?Bạn hãy tưởng tượng rằng dòng chữ Hello World mà chúng ta in ra trong bài trước chính là một món hàng. Nhưng để có thể sử dụng món hàng đó bất cứ khi nào, chúng ta cần một chiếc hộp để đựng nó. Chiếc hộp đó chính là biến trong lập trình. Một chiếc hộp (biến) trong JavaScript có thể chứa bất kỳ thứ gì bạn muốn: một con số, một đoạn chữ, hay thậm chí là một mệnh lệnh. Khi bạn đặt món hàng vào chiếc hộp, bạn có thể dán nhãn cho nó để dễ nhớ. Nhãn đó chính là tên biến.2. Cách khai báo biến trong JavaScriptĐể tạo ra chiếc hộp này, chúng ta sử dụng các từ khóa &#34;let&#34;, &#34;const&#34;, hoặc &#34;var&#34;. Hãy hình dung rằng những từ khóa này giống như các loại hộp khác nhau, mỗi loại có đặc điểm riêng.Khai báo một chiếc hộp (biến)let message = Hello, World!&#34;;">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-13T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.pngpng">
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "http://localhost:1313/#author",
+      "name":  null ,
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "http://localhost:1313/images/avatar.png"
+        
+      },
+      "description": "Tác giả: Đinh Tấn Phương Linh"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "http://localhost:1313/#website",
+      "url": "http://localhost:1313/",
+      "name": "Blog Lập Trình",
+      "description": "Tác giả: Đinh Tấn Phương Linh",
+      "publisher": {
+        "@id": "http://localhost:1313/#author"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/images/avatar.pngpng",
+      "caption": "Blog Lập Trình"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "http://localhost:1313/posts/posts4/#webpage",
+      "url": "http://localhost:1313/posts/posts4/",
+      "name": "Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 1)",
+      "isPartOf": {
+        "@id": "http://localhost:1313/#website"
+      },
+      "about": {
+         "@id": "http://localhost:1313/#author"
+      },
+      "datePublished": "2024-12-13T00:00:00+00:00",
+      "dateModified": "2024-12-13T00:00:00+00:00",
+      "description": "\u003cp style=\"text-indent: 50px;\"\u003eĐể sử dụng JavaScriptJavaScript một cách hiệu quả, việc hiểu rõ các khái niệm cơ bản như biến, kiểu dữ liệu, truyền kiểu và chú thích là rất quan trọng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu các khái niệm này một cách chi tiết.\r\n\u003cp style=\"text-indent: 50px;\"\u003eVì bài viết này tìm hiểu khá nhiều khái niệm nên tôi sẽ chia nó làm nhiều phần.\r\n\u003cp style=\"font-size: 2em; font-weight: bold; color: black;\"\u003e1. Biến là gì?\r\n\u003cp style=\"text-indent: 50px;\"\u003eBạn hãy tưởng tượng rằng dòng chữ Hello World mà chúng ta in ra trong bài trước chính là một món hàng. Nhưng để có thể sử dụng món hàng đó bất cứ khi nào, chúng ta cần một chiếc hộp để đựng nó. Chiếc hộp đó chính là biến trong lập trình. Một chiếc hộp (biến) trong JavaScript có thể chứa bất kỳ thứ gì bạn muốn: một con số, một đoạn chữ, hay thậm chí là một mệnh lệnh. Khi bạn đặt món hàng vào chiếc hộp, bạn có thể dán nhãn cho nó để dễ nhớ. Nhãn đó chính là tên biến.\r\n\u003cp style=\"font-size: 2em; font-weight: bold; color: black;\"\u003e2. Cách khai báo biến trong JavaScript\r\n\u003cp style=\"text-indent: 50px;\"\u003eĐể tạo ra chiếc hộp này, chúng ta sử dụng các từ khóa \"let\", \"const\", hoặc \"var\". Hãy hình dung rằng những từ khóa này giống như các loại hộp khác nhau, mỗi loại có đặc điểm riêng.\r\n\u003cp style=\"text-indent: 50px; font-weight: bold;\"\u003eKhai báo một chiếc hộp (biến)\r\n\u003cdiv style=\"display: flex; justify-content: center; align-items: center; height: auto; background-color:white\"\u003e\r\n    \u003cp style=\"background-color: black; color: blue; display: inline;\"\u003elet \u003cspan style=\"color: yellow;\"\u003emessage = \u003cspan style=\"color: red;\"\u003eHello, World!\";\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
+      "inLanguage": "en",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "http://localhost:1313/posts/posts4/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "http://localhost:1313/posts/posts4/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "http://localhost:1313/posts/posts4/#webpage"
+      },
+      "headline": "Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 1)",
+      "datePublished": "2024-12-13T00:00:00+00:00",
+      "dateModified": "2024-12-13T00:00:00+00:00",
+      "publisher": {
+        "@id": "http://localhost:1313/#author"
+      },
+      "keywords": [
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "http://localhost:1313/posts/posts4/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="http://localhost:1313/">
+            <img src="/images/avatar.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1>Blog Lập Trình</h1>
+
+      
+      <p class="lead">Tác giả: Đinh Tấn Phương Linh</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="http://localhost:1313/">Trang chủ</a>
+        </li>
+        <li>
+          <a href="/posts/">Bài viết</a>
+        </li><li>
+          <a href="/about/">Về tôi</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://www.facebook.com/inhtanphuonglinh/" rel="me" title="Facebook" target="_blank">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/dinhtanplinh03" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 1)</h1>
+  
+
+  <div class="post-date">
+    
+    
+    
+    
+    
+    
+    <time datetime="2024-12-13T00:00:00Z">
+     13 tháng 12 năm 2024
+    </time> <span class="readtime">- Tổng 3 phút đã đọc</span>
+  </div>
+
+  <div>
+  <p style="text-indent: 50px;">Để sử dụng JavaScriptJavaScript một cách hiệu quả, việc hiểu rõ các khái niệm cơ bản như biến, kiểu dữ liệu, truyền kiểu và chú thích là rất quan trọng. Trong bài viết này, chúng ta sẽ cùng tìm hiểu các khái niệm này một cách chi tiết.
+<p style="text-indent: 50px;">Vì bài viết này tìm hiểu khá nhiều khái niệm nên tôi sẽ chia nó làm nhiều phần.
+<p style="font-size: 2em; font-weight: bold; color: black;">1. Biến là gì?
+<p style="text-indent: 50px;">Bạn hãy tưởng tượng rằng dòng chữ Hello World mà chúng ta in ra trong bài trước chính là một món hàng. Nhưng để có thể sử dụng món hàng đó bất cứ khi nào, chúng ta cần một chiếc hộp để đựng nó. Chiếc hộp đó chính là biến trong lập trình. Một chiếc hộp (biến) trong JavaScript có thể chứa bất kỳ thứ gì bạn muốn: một con số, một đoạn chữ, hay thậm chí là một mệnh lệnh. Khi bạn đặt món hàng vào chiếc hộp, bạn có thể dán nhãn cho nó để dễ nhớ. Nhãn đó chính là tên biến.
+<p style="font-size: 2em; font-weight: bold; color: black;">2. Cách khai báo biến trong JavaScript
+<p style="text-indent: 50px;">Để tạo ra chiếc hộp này, chúng ta sử dụng các từ khóa "let", "const", hoặc "var". Hãy hình dung rằng những từ khóa này giống như các loại hộp khác nhau, mỗi loại có đặc điểm riêng.
+<p style="text-indent: 50px; font-weight: bold;">Khai báo một chiếc hộp (biến)
+<div style="display: flex; justify-content: center; align-items: center; height: auto; background-color:white">
+    <p style="background-color: black; color: blue; display: inline;">let <span style="color: yellow;">message = <span style="color: red;">Hello, World!";</span></span></p>
+</div>
+"let" là cách bạn nói với JavaScript: "Hãy tạo một chiếc hộp có thể thay đổi, và tôi đặt tên cho nó là message.". Nội dung bên trong hộp là "Hello, World!".
+<p style="text-indent: 50px;">Giờ bạn có thể dùng chiếc hộp này bất kỳ lúc nào. Chỉ cần gọi tên "message", JavaScript sẽ lấy dữ liệu bên trong hộp ra cho bạn.
+<p style="text-indent: 50px; font-weight: bold;">Thay đổi nội dung hộp (biến)
+<div style="display: flex; justify-content: center; align-items: center; height: auto; background-color:white">
+    <p style="background-color: black; color: blue; display: inline;"><span style="color: yellow;">message = <span style="color: red;">Hello, JavaScript!";</span></span></p>
+</div>
+Chiếc hộp vẫn giữ nguyên tên, nhưng bạn có thể thay đổi món hàng bên trong.
+<p style="text-indent: 50px; font-weight: bold;">Khai báo một hộp (biến) không đổi
+<div style="display: flex; justify-content: center; align-items: center; height: auto; background-color:white">
+    <p style="background-color: black; color: violet; display: inline;">const <span style="color: yellow;">pi = <span style="color: red;">3,14;</span></span></p>
+</div>
+Với "const", bạn tạo ra một chiếc hộp mà nội dung bên trong không thể thay đổi. Một khi bạn đã đặt 3.14 vào, bạn không thể thay thế nó bằng một giá trị khác.
+<p style="font-size: 2em; font-weight: bold; color: black;">3. Biến giúp ích gì?
+<p style="text-indent: 50px;">Bạn có thể nghĩ rằng "Tại sao không dùng trực tiếp nội dung như "Hello, World!" mà cần biến?" Câu trả lời là: biến giúp bạn tái sử dụng và tổ chức dữ liệu dễ dàng hơn.
+<p style="text-indent: 50px;">Ví dụ: Tái sử dụng dữ liệu. Thay vì viết đi viết lại "Hello, World!" mỗi lần cần in, bạn chỉ cần dùng biến:
+<div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: auto; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 5px; padding: 5px;">let <span style="color: yellow;">message = <span style="color: red;">"Hello World!";</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 5px; padding: 5px;">console.<span style="color: yellow;">log(<span style="color: red;">message);</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 5px; padding: 5px;">console.<span style="color: yellow;">log(<span style="color: red;">message);</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 5px; padding: 5px;">console.<span style="color: yellow;">log(<span style="color: red;">message);</span></span></p>
+</div>
+<p style="text-indent: 50px;">Ví dụ: Thay đổi dữ liệu linh hoạt. Nếu bạn cần thay đổi nội dung, chỉ cần cập nhật biến:
+<div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: auto; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 5px; padding: 5px;">let <span style="color: yellow;">message</span> = <span style="color: red;">"Hello, World!";</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 5px; padding: 5px;">console.<span style="color: yellow;">log</span>(<span style="color: red;">message</span>);</p>
+    <p style="background-color: black; color: violet; display: block; margin: 5px; padding: 5px;">message = <span style="color: red;">"Hello, JavaScript!";</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 5px; padding: 5px;">console.<span style="color: yellow;">log</span>(<span style="color: red;">message</span>);</p>
+</div>
+<p style="text-indent: 50px;">Bạn không cần sửa tất cả các chỗ dùng "Hello, World!" trong mã nguồn, giúp bạn tiết kiệm thời gian.
+<p style="font-size: 2em; font-weight: bold; color: black;">4. Tên biến - Ghi nhớ và hiểu
+<p style="text-indent: 50px;">Tên biến giống như nhãn trên hộp. Nếu bạn đặt tên biến rõ ràng, bạn sẽ dễ dàng hiểu được vai trò của biến đó. Một số quy tắc và gợi ý:
+<ul>
+<li>
+<p><strong>Tên biến phải bắt đầu bằng chữ cái, _, hoặc $.</strong></p>
+</li>
+<li>
+<p><strong>Không được chứa khoảng trắng, các từ khóa hoặc ký tự đặc biệt.</strong></p>
+</li>
+</ul>
+<p style="text-indent: 50px;">Hãy chọn tên gợi nhớ ý nghĩa, ví dụ:
+<div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: auto; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 5px; padding: 5px;">let <span style="color: yellow;">userName</span> = <span style="color: red;">"Alice";</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 5px; padding: 5px;">let <span style="color: yellow;">age</span> = <span style="color: red;">25;</span></p>
+</div>
+<p style="font-size: 2em; font-weight: bold; color: black;">5. Kết luận
+<p style="text-indent: 50px;">Biến là một khái niệm cốt lõi trong JavaScript. Hãy nghĩ về nó như những chiếc hộp giúp bạn lưu trữ và tổ chức dữ liệu một cách hiệu quả. Khi bạn hiểu cách sử dụng biến, bạn đã bước thêm một bước gần hơn đến việc làm chủ JavaScript!
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts3/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
+  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts5/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
+</div>
+  </div>
+
+  
+
+
+  
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Đinh Tấn Phương Linh 2024
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  
+
+    
+</body>
+</html>

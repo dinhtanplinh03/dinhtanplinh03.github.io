@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.140.0">
+
+  <title>Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 2) &middot; Blog Lập Trình</title>
+
+  <meta name="description" content="" />
+
+  
+  <meta itemprop="name" content="Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 2)">
+  <meta itemprop="description" content="JavaScript là một ngôn ngữ linh hoạt và được sử dụng rộng rãi nhờ khả năng làm việc với nhiều kiểu dữ liệu khác nhau. Trong bài viết này, chúng ta sẽ khám phá các kiểu dữ liệu chính trong JavaScript, bao gồm cách chúng hoạt động và khi nào nên sử dụng.1. Kiểu Dữ Liệu Nguyên Thủy (Primitive Types)Kiểu dữ liệu nguyên thủy là những kiểu dữ liệu cơ bản nhất trong JavaScript. Mỗi giá trị thuộc kiểu nguyên thủ là một giá trị duy nhất và không thể thay đổi. Các kiểu dữ liệu nguyên thủ bao gồm:1.1. StringĐại diện cho các chuỗi ký tự.Cách khai báo:let name = “Alice”;">
+  <meta itemprop="datePublished" content="2024-12-14T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-14T00:00:00+00:00">
+  <meta itemprop="wordCount" content="377">
+  <meta itemprop="image" content="http://localhost:1313/images/avatar.pngpng">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/avatar.pngpng">
+  <meta name="twitter:title" content="Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 2)">
+  <meta name="twitter:description" content="JavaScript là một ngôn ngữ linh hoạt và được sử dụng rộng rãi nhờ khả năng làm việc với nhiều kiểu dữ liệu khác nhau. Trong bài viết này, chúng ta sẽ khám phá các kiểu dữ liệu chính trong JavaScript, bao gồm cách chúng hoạt động và khi nào nên sử dụng.1. Kiểu Dữ Liệu Nguyên Thủy (Primitive Types)Kiểu dữ liệu nguyên thủy là những kiểu dữ liệu cơ bản nhất trong JavaScript. Mỗi giá trị thuộc kiểu nguyên thủ là một giá trị duy nhất và không thể thay đổi. Các kiểu dữ liệu nguyên thủ bao gồm:1.1. StringĐại diện cho các chuỗi ký tự.Cách khai báo:let name = “Alice”;">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/posts5/">
+  <meta property="og:site_name" content="Blog Lập Trình">
+  <meta property="og:title" content="Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 2)">
+  <meta property="og:description" content="JavaScript là một ngôn ngữ linh hoạt và được sử dụng rộng rãi nhờ khả năng làm việc với nhiều kiểu dữ liệu khác nhau. Trong bài viết này, chúng ta sẽ khám phá các kiểu dữ liệu chính trong JavaScript, bao gồm cách chúng hoạt động và khi nào nên sử dụng.1. Kiểu Dữ Liệu Nguyên Thủy (Primitive Types)Kiểu dữ liệu nguyên thủy là những kiểu dữ liệu cơ bản nhất trong JavaScript. Mỗi giá trị thuộc kiểu nguyên thủ là một giá trị duy nhất và không thể thay đổi. Các kiểu dữ liệu nguyên thủ bao gồm:1.1. StringĐại diện cho các chuỗi ký tự.Cách khai báo:let name = “Alice”;">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-12-14T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-14T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:1313/images/avatar.pngpng">
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type":"Person",
+      "@id": "http://localhost:1313/#author",
+      "name":  null ,
+      "image": {
+        "@type":"ImageObject",
+        
+        "url": "http://localhost:1313/images/avatar.png"
+        
+      },
+      "description": "Tác giả: Đinh Tấn Phương Linh"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "http://localhost:1313/#website",
+      "url": "http://localhost:1313/",
+      "name": "Blog Lập Trình",
+      "description": "Tác giả: Đinh Tấn Phương Linh",
+      "publisher": {
+        "@id": "http://localhost:1313/#author"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/images/avatar.pngpng",
+      "caption": "Blog Lập Trình"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "http://localhost:1313/posts/posts5/#webpage",
+      "url": "http://localhost:1313/posts/posts5/",
+      "name": "Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 2)",
+      "isPartOf": {
+        "@id": "http://localhost:1313/#website"
+      },
+      "about": {
+         "@id": "http://localhost:1313/#author"
+      },
+      "datePublished": "2024-12-14T00:00:00+00:00",
+      "dateModified": "2024-12-14T00:00:00+00:00",
+      "description": "\u003cp style=\"text-indent: 50px;\"\u003eJavaScript là một ngôn ngữ linh hoạt và được sử dụng rộng rãi nhờ khả năng làm việc với nhiều kiểu dữ liệu khác nhau. Trong bài viết này, chúng ta sẽ khám phá các kiểu dữ liệu chính trong JavaScript, bao gồm cách chúng hoạt động và khi nào nên sử dụng.\r\n\u003cp style=\"font-size: 2em; font-weight: bold; color: black;\"\u003e1. Kiểu Dữ Liệu Nguyên Thủy (Primitive Types)\r\n\u003cp style=\"text-indent: 50px;\"\u003eKiểu dữ liệu nguyên thủy là những kiểu dữ liệu cơ bản nhất trong JavaScript. Mỗi giá trị thuộc kiểu nguyên thủ là một giá trị duy nhất và không thể thay đổi. Các kiểu dữ liệu nguyên thủ bao gồm:\r\n\u003cp style=\"font-size: 1.5em; font-weight: bold; color: black;\"\u003e1.1. String\r\n\u003cp style=\"text-indent: 50px;\"\u003eĐại diện cho các chuỗi ký tự.\r\nCách khai báo:\r\n\u003cdiv style=\"display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;\"\u003e \u003cp style=\"background-color: black; color: violet; display: block; margin: 0; padding: 5px;\"\u003elet \u003cspan style=\"color: yellow;\"\u003ename = \u003cspan style=\"color: red;\"\u003e\u0026ldquo;Alice\u0026rdquo;;\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
+      "inLanguage": "en",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "http://localhost:1313/posts/posts5/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "isPartOf": {
+        "@id": "http://localhost:1313/posts/posts5/#webpage"
+      },
+      "mainEntityOfPage": {
+        "@id": "http://localhost:1313/posts/posts5/#webpage"
+      },
+      "headline": "Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 2)",
+      "datePublished": "2024-12-14T00:00:00+00:00",
+      "dateModified": "2024-12-14T00:00:00+00:00",
+      "publisher": {
+        "@id": "http://localhost:1313/#author"
+      },
+      "keywords": [
+      ],
+      "articleSection": [
+      ],
+      "inLanguage": "en",
+      "author": {
+        "@type": "Person",
+        "name":  null 
+      },
+      "potentialAction": [
+        {
+          "@type": "CommentAction",
+          "name": "Comment",
+          "target": [
+            "http://localhost:1313/posts/posts5/#comments"
+          ]
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/css/hyde.css">
+
+  
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <a href="http://localhost:1313/">
+            <img src="/images/avatar.png" class="img-circle img-headshot center" alt="Profile Picture">
+          </a>
+        </div>
+        
+      
+
+      <h1>Blog Lập Trình</h1>
+
+      
+      <p class="lead">Tác giả: Đinh Tấn Phương Linh</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="http://localhost:1313/">Trang chủ</a>
+        </li>
+        <li>
+          <a href="/posts/">Bài viết</a>
+        </li><li>
+          <a href="/about/">Về tôi</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://www.facebook.com/inhtanphuonglinh/" rel="me" title="Facebook" target="_blank">
+        <i class="fab fa-facebook" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/dinhtanplinh03" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1 class="title">Biến, kiểu dữ liệu, truyền kiểu và chú thích (Phần 2)</h1>
+  
+
+  <div class="post-date">
+    
+    
+    
+    
+    
+    
+    <time datetime="2024-12-14T00:00:00Z">
+     14 tháng 12 năm 2024
+    </time> <span class="readtime">- Tổng 2 phút đã đọc</span>
+  </div>
+
+  <div>
+  <p style="text-indent: 50px;">JavaScript là một ngôn ngữ linh hoạt và được sử dụng rộng rãi nhờ khả năng làm việc với nhiều kiểu dữ liệu khác nhau. Trong bài viết này, chúng ta sẽ khám phá các kiểu dữ liệu chính trong JavaScript, bao gồm cách chúng hoạt động và khi nào nên sử dụng.
+<p style="font-size: 2em; font-weight: bold; color: black;">1. Kiểu Dữ Liệu Nguyên Thủy (Primitive Types)
+<p style="text-indent: 50px;">Kiểu dữ liệu nguyên thủy là những kiểu dữ liệu cơ bản nhất trong JavaScript. Mỗi giá trị thuộc kiểu nguyên thủ là một giá trị duy nhất và không thể thay đổi. Các kiểu dữ liệu nguyên thủ bao gồm:
+<p style="font-size: 1.5em; font-weight: bold; color: black;">1.1. String
+<p style="text-indent: 50px;">Đại diện cho các chuỗi ký tự.
+Cách khai báo:
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;"> <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">name = <span style="color: red;">&ldquo;Alice&rdquo;;</span></span></p> <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">greeting = <span style="color: red;">&lsquo;Hello&rsquo;;</span></span></p> </div>
+Lưu ý: Chuỗi trong JavaScript có thể được bao bọc bởi dấu nháy đơn (' ') hoặc nháy kép (" ").
+<p style="font-size: 1.5em; font-weight: bold; color: black;">1.2. Number
+<p style="text-indent: 50px;">Đại diện cho các con số, bao gồm số nguyên và số thực. Cách khai báo:
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">age = <span style="color: red;">25;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">price = <span style="color: red;">99.99;</span></span></p>
+</div>
+Lưu ý: JavaScript chỉ có một kiểu số duy nhất, khác với nhiều ngôn ngữ khác.
+<p style="font-size: 1.5em; font-weight: bold; color: black;">1.3. Boolean
+<p style="text-indent: 50px;">Đại diện cho hai giá trị logic: true và false. Cách khai báo:
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">isLoggedIn = <span style="color: red;">true;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">hasPermission = <span style="color: red;">false;</span></span></p>
+</div>
+<p style="font-size: 1.5em; font-weight: bold; color: black;">1.4. Undefined
+<p style="text-indent: 50px;">Biểu thị một biến được khai báo nhưng chưa được gán giá trị. Cách khai báo:
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">user = <span style="color: red;">undefined;</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">console.log(<span style="color: yellow;">user</span>); <span style="color: green;">//undefined</span></p>
+</div>
+<p style="font-size: 1.5em; font-weight: bold; color: black;">1.5. Null
+<p style="text-indent: 50px;">Đại diện cho giá trị "trống" hoặc "không tồn tại". Cách khai báo:
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">value = <span style="color: red;">null;</span></span></p>
+</div>
+<p style="font-size: 1.5em; font-weight: bold; color: black;">1.6. Symbol
+<p style="text-indent: 50px;">Được giới thiệu trong ES6, biểu diễn một giá trị duy nhất và không trùng lặp. Cách khai báo:
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">uniqueId = <span style="color: red;">Symbol('id');</span></span></p>
+</div>
+<p style="font-size: 2em; font-weight: bold; color: black;">2. Kiểu Dữ Liệu Tham Chiếu (Reference Types)
+<p style="text-indent: 50px;">Các kiểu dữ liệu tham chiếu bao gồm Object, Array, và Function. Đặc điểm của chúng là giá trị được lưu trữ bằng tham chiếu, không phải trực tiếp.
+<p style="font-size: 1.5em; font-weight: bold; color: black;">2.1. Object
+<p style="text-indent: 50px;">Là tập hợp các cặp key-value. Cách khai báo:
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">user = <span style="color: red;">{</span></span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: yellow;">name:</span> <span style="color: red;">"Alice"</span>,</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: yellow;">age:</span> <span style="color: red;">25</span></p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}<span style="color: red;">;</span></p>
+</div>
+<p style="font-size: 1.5em; font-weight: bold; color: black;">2.2. Array
+<p style="text-indent: 50px;">Là danh sách các phần tử. Cách khai báo:
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">let <span style="color: yellow;">colors = <span style="color: red;">["red", "green", "blue"];</span></span></p>
+</div>
+<p style="font-size: 1.5em; font-weight: bold; color: black;">2.3. Function
+<p style="text-indent: 50px;">Là khối mã chứa các tác vụ. Cách khai báo:
+<div style="display: flex; flex-direction: column; align-items: flex-start; background-color: black; padding: 10px;">
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">function <span style="color: yellow;">greet</span>()</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">{</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">    <span style="color: yellow;">console.log</span>(<span style="color: red;">"Hello, World!"</span>);</p>
+    <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts4/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
+  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts6/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
+</div>
+  </div>
+
+  
+
+
+  
+
+
+  
+</div>
+  </main>
+
+  <footer>
+  <div>
+    <p>
+      &copy; Đinh Tấn Phương Linh 2024
+
+      
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/soho.js"></script>
+
+  
+
+    
+</body>
+</html>
