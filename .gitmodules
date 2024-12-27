@@ -2,5 +2,6 @@
 	path = soho
 	url = https://github.com/alexandrevicenzi/soho.git
 [submodule "themes/soho"]
-	path = themes/soho
-	url = https://github.com/alexandrevicenzi/soho.git
+    path = themes/soho
+    url = https://github.com/dinhtanplinh03/soho.git
+
