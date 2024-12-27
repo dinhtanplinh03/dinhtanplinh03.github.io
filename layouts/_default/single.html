@@ -1,0 +1,37 @@
+{{ define "main" -}}
+<div class="post">
+  <h1 class="title">{{ .Title }}</h1>
+  {{ with .Params.tagline }}<span class="tagline">{{ . }}</span>{{ end }}
+
+  {{ if ne .Type "page" -}}
+  <div class="post-date">
+    {{ $day := .Date.Format "02" }}
+    {{ $month := .Date.Format "01" }}
+    {{ $year := .Date.Format "2006" }}
+    
+    {{ $monthNames := slice "tháng 1" "tháng 2" "tháng 3" "tháng 4" "tháng 5" "tháng 6" "tháng 7" "tháng 8" "tháng 9" "tháng 10" "tháng 11" "tháng 12" }}
+    
+    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">
+     {{ $day }} {{ index $monthNames (sub (int $month) 1) }} năm {{ $year }}
+    </time> <span class="readtime">- Tổng {{ .ReadingTime }} phút đã đọc</span>
+  </div>
+  {{- end }}
+
+  <div>
+  {{ .Content }}
+  </div>
+
+  {{ partial "tags.html" . }}
+
+  {{ if (and (ne .Params.DisableShare true) (ne .Params.disable_share true)) -}}
+  {{ partial "share.html" . }}
+  {{- end }}
+
+  {{ if (and .Site.Config.Services.Disqus.Shortname (ne .Params.DisableComments true) (ne .Params.disable_comments true)) -}}
+  <div class="comments">
+    <h2>Comments</h2>
+    {{ template "_internal/disqus.html" . }}
+  </div>
+  {{- end }}
+</div>
+{{- end }}
