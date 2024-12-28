@@ -12,19 +12,19 @@ draft: false
 <p style="text-indent: 50px;">Để tạo ra chiếc hộp này, chúng ta sử dụng các từ khóa "let", "const", hoặc "var". Hãy hình dung rằng những từ khóa này giống như các loại hộp khác nhau, mỗi loại có đặc điểm riêng.
 
 <p style="text-indent: 50px; font-weight: bold;">Khai báo một chiếc hộp (biến)
-<div style="display: flex; justify-content: center; align-items: center; height: auto; background-color:black">
+<div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: auto; background-color: black; padding: 10px;">
     <p style="background-color: black; color: blue; display: inline;">let <span style="color: yellow;">message = <span style="color: red;">Hello, World!";</span></span></p>
 </div>
 "let" là cách bạn nói với JavaScript: "Hãy tạo một chiếc hộp có thể thay đổi, và tôi đặt tên cho nó là message.". Nội dung bên trong hộp là "Hello, World!".
 <p style="text-indent: 50px;">Giờ bạn có thể dùng chiếc hộp này bất kỳ lúc nào. Chỉ cần gọi tên "message", JavaScript sẽ lấy dữ liệu bên trong hộp ra cho bạn.
 
 <p style="text-indent: 50px; font-weight: bold;">Thay đổi nội dung hộp (biến)
-<div style="display: flex; justify-content: center; align-items: center; height: auto; background-color:black">
+<div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: auto; background-color: black; padding: 10px;">
     <p style="background-color: black; color: blue; display: inline;"><span style="color: yellow;">message = <span style="color: red;">Hello, JavaScript!";</span></span></p>
 </div>
 Chiếc hộp vẫn giữ nguyên tên, nhưng bạn có thể thay đổi món hàng bên trong.
 <p style="text-indent: 50px; font-weight: bold;">Khai báo một hộp (biến) không đổi
-<div style="display: flex; justify-content: center; align-items: center; height: auto; background-color:black">
+<div style="display: flex; flex-direction: column; align-items: flex-start; justify-content: center; height: auto; background-color: black; padding: 10px;">
     <p style="background-color: black; color: violet; display: inline;">const <span style="color: yellow;">pi = <span style="color: red;">3,14;</span></span></p>
 </div>
 Với "const", bạn tạo ra một chiếc hộp mà nội dung bên trong không thể thay đổi. Một khi bạn đã đặt 3.14 vào, bạn không thể thay thế nó bằng một giá trị khác.
