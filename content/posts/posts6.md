@@ -89,6 +89,6 @@ Các Tình Huống Chuyển Đổi Kiểu Thường Gặp
 <p style="text-indent: 50px;">Chú thích giúp mã nguồn dễ đọc hơn: Chú thích là cách tuyệt vời để giải thích lý do tại sao bạn làm điều gì đó trong mã nguồn. Điều này rất quan trọng khi làm việc trong một nhóm phát triển phần mềm.
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
-  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts5/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
-  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts7/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
+  <a href="https://dinhtanplinh03.github.io/posts/posts5/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
+  <a href="https://dinhtanplinh03.github.io/posts/posts7/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
 </div>

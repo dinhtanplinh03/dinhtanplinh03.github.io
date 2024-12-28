@@ -63,6 +63,6 @@ Với "const", bạn tạo ra một chiếc hộp mà nội dung bên trong khô
 <p style="text-indent: 50px;">Biến là một khái niệm cốt lõi trong JavaScript. Hãy nghĩ về nó như những chiếc hộp giúp bạn lưu trữ và tổ chức dữ liệu một cách hiệu quả. Khi bạn hiểu cách sử dụng biến, bạn đã bước thêm một bước gần hơn đến việc làm chủ JavaScript!
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
-  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts3/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
-  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts5/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
+  <a href="https://dinhtanplinh03.github.io/posts/posts3/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
+  <a href="https://dinhtanplinh03.github.io/posts/posts5/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
 </div>

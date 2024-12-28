@@ -126,5 +126,5 @@ Trong ví dụ trên, hàm factorial tính giai thừa của một số thông q
 <p style="text-indent: 50px;">Hàm là một phần quan trọng trong JavaScript, giúp bạn tổ chức và tái sử dụng mã dễ dàng. Từ việc khai báo các hàm cơ bản, đến việc sử dụng hàm dưới dạng biểu thức, arrow function, hàm đệ quy và callback function, JavaScript cung cấp nhiều công cụ mạnh mẽ để xử lý các tác vụ phức tạp.
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
-  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts8/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
+  <a href="https://dinhtanplinh03.github.io/posts/posts9/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
 </div>

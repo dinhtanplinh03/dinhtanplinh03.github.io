@@ -25,6 +25,6 @@ draft: false
 <p style="text-indent: 50px;">JavaScript không chỉ là một ngôn ngữ lập trình mà còn là cầu nối giúp chúng ta tương tác với công nghệ một cách hiệu quả. Dù bạn mới bắt đầu học lập trình hay đã có kinh nghiệm, việc thành thạo JavaScript sẽ mang lại giá trị lớn trong sự nghiệp và cuộc sống của bạn. <p style="text-indent: 30px;">Hãy bắt đầu hành trình khám phá JavaScript ngay hôm nay!
 
 <div style="text-align: right;">
-  <a href="http://localhost:1313/dinhtanplinh03/dinhtanplinh03.github.io.git/posts/posts2/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
+  <a href="https://dinhtanplinh03.github.io/posts/posts2/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
 </div>
 
