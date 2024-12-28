@@ -17,7 +17,7 @@ draft: false
 </div>
 <p style="text-indent: 45px;">-Câu lệnh console.log sẽ in thông điệp ra bảng Console của trình duyệt.
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+<!-- <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
   <a href="https://dinhtanplinh03.github.io/posts/posts2/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
   <a href="https://dinhtanplinh03.github.io/posts/posts4/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
-</div>
+</div> -->

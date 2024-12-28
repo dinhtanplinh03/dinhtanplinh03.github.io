@@ -136,7 +136,7 @@ Kết quả sẽ là:
 <p style="font-size: 2em; font-weight: bold; color: black;">3. Kết luận
 <p style="text-indent: 50px;">Điều kiện và vòng lặp là những công cụ quan trọng trong JavaScript giúp bạn kiểm tra các giá trị và lặp lại các thao tác một cách linh hoạt. Việc hiểu và sử dụng thành thạo các cấu trúc này giúp bạn viết mã hiệu quả và dễ dàng quản lý luồng chương trình.
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+<!-- <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
   <a href="https://dinhtanplinh03.github.io/posts/posts7/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
   <a href="https://dinhtanplinh03.github.io/posts/posts9/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
-</div>
+</div> -->

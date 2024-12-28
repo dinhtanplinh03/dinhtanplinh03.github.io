@@ -66,7 +66,7 @@ Lưu ý: JavaScript chỉ có một kiểu số duy nhất, khác với nhiều 
     <p style="background-color: black; color: violet; display: block; margin: 0; padding: 5px;">}</p>
 </div>
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+<!-- <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
   <a href="https://dinhtanplinh03.github.io/posts/posts4/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
   <a href="https://dinhtanplinh03.github.io/posts/posts6/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
-</div>
+</div> -->

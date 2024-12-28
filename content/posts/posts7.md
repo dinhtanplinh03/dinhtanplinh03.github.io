@@ -107,7 +107,7 @@ draft: false
 <p style="font-size: 2em; font-weight: bold; color: black;">4. Kết luận
 <p style="text-indent: 50px;">Các toán tử trong JavaScript giúp bạn thực hiện các phép toán cơ bản, từ gán giá trị, thực hiện các phép toán số học đến các phép toán logic. Việc hiểu rõ cách sử dụng chúng sẽ giúp bạn viết mã hiệu quả hơn và dễ dàng giải quyết các vấn đề trong lập trình.
 
-<div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
+<!-- <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
   <a href="https://dinhtanplinh03.github.io/posts/posts6/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Quay lại bài trước</a>
   <a href="https://dinhtanplinh03.github.io/posts/posts8/" style="display: inline-block; padding: 10px 20px; background-color: green; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">Chuyển sang bài tiếp theo</a>
-</div>
+</div> -->
